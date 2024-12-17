@@ -11,7 +11,6 @@ always @(posedge clk) begin
   else begin
     addr_reg <= addr;
   end
-  Q <= ram[addr_reg];
 end
 always@(posedge clk)begin
     Q <= ram[addr_reg];
